@@ -1,0 +1,36 @@
+###
+post http://localhost:4000/user-api/user
+Content-Type: application/json
+
+{
+    "userType":"user",
+    "username":"ramesh",
+    "password":"ramesh",
+    "email":"ramesh@gmail.com"
+}
+
+###
+post http://localhost:4000/user-api/login
+Content-Type: application/json
+
+{
+    "userType":"user",
+    "username":"ravi",
+    "password":"ravi"
+}
+
+###
+get http://localhost:4000/user-api/articles
+
+###
+get http://localhost:4000/admin-api/articles
+
+###
+post http://localhost:4000/user-api/comment/1709043064
+Content-Type: application/json
+
+{
+    
+    "username":"ravi",
+    "comment":"some comment"
+}
